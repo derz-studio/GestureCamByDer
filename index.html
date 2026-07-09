@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GestureCam</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <video
+        id="video"
+        autoplay
+        playsinline>
+    </video>
+
+    <canvas id="canvas"></canvas>
+
+    <div class="hud">
+
+    <div class="live">
+
+        <span class="live-dot"></span>
+
+        LIVE
+
+    </div>
+
+    <h1>GestureCam</h1>
+
+    <p class="subtitle">
+
+        AI Vision Interface
+
+    </p>
+
+    <div class="info">
+
+        <div class="row">
+
+            <span>Gesture</span>
+
+            <span id="gesture">
+
+                Waiting...
+
+            </span>
+
+        </div>
+
+        <div class="row">
+
+            <span>Blur</span>
+
+            <span id="blurStatus">
+
+                OFF
+
+            </span>
+
+        </div>
+
+        <div class="row">
+
+            <span>Status</span>
+
+            <span id="tracking">
+
+                Ready
+
+            </span>
+
+        </div>
+        <div class="row">
+
+    <span>Time</span>
+
+    <span id="clock">
+
+        00:00:00
+
+    </span>
+    <div class="row">
+
+    <span>FPS</span>
+
+    <span id="fps">
+
+        0
+
+    </span>
+
+</div>
+
+</div>
+
+    </div>
+
+</div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script>
+
+<script src="effects.js"></script>
+<script src="gestures.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
